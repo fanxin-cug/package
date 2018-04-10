@@ -53,6 +53,7 @@ min_latitude=min(latitudeList_)
 
 Rho_s=get_Rho(min_latitude)
 
+#根据经纬度计算大地坐标
 def axesTransfer(Lambda,Phi):
     Lambda_=np.radians(Lambda)
     #计算Sigma
@@ -68,5 +69,6 @@ for i in range(len(longitudeList_)):
     X_list.append(tmp[0])
     Y_list.append(tmp[1])
 
+#绘制图像
 plt.plot(X_list,Y_list)
 plt.show()

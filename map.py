@@ -66,7 +66,7 @@ X_list=list()
 Y_list=list()
 for i in range(len(longitudeList_)):
     tmp=axesTransfer(longitudeList_[i],latitudeList_[i])
-    X_list.append(tmp[0])
+    X_list.append(-tmp[0])
     Y_list.append(tmp[1])
 
 #绘制图像
